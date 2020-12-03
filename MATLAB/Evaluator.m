@@ -128,6 +128,11 @@ for i = 1:length(myFiles)                                                   % It
     plot(xs, ys, 'g-')                                                      % Plot the fitted line
     axis equal                                                              % Equal scaling on both axes
     hold off
+    leg1 = legend({'Points', 'Fitted line'}, 'Location','northoutside');
+    leg1.ItemTokenSize = [2,9];
+
+    
+     %}, 'Location','none','position',[0 0 0.4 0.2]
     
     gamma = atan(modelInliers(1));                                          % Get the angle of the fitted line
     dY = -modelInliers(2);                                                  % Calculate vertical translation
@@ -159,8 +164,8 @@ for i = 1:length(myFiles)                                                   % It
     subplot(length(myFiles), 2, 2+2*(i-1))                                  % Subplot for the histogram
     hold on
     plot(myEdges, myValues)
-    xlabel('Nr. of points [-]') 
-    ylabel('x [m]')                                                 % Plot the histogram
+    xlabel('x [m]') 
+    ylabel('Nr. of points [−]')                                                 % Plot the histogram
     
     % Calculate threshold
     % Calculate the mean of non-zero elements
@@ -203,7 +208,9 @@ for i = 1:length(myFiles)                                                   % It
     hold on;
     plot(xt, [threshold threshold], 'r-')
     hold off;
-    
+    leg2 = legend({'Distribution', 'Threshold'}, 'Location','northoutside');
+    leg2.ItemTokenSize = [2,9];
+
     lengths(i) = mini - maxi;                                               % Store the measured distance in the results vector
 end
 technique = ''

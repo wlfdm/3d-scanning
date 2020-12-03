@@ -1,6 +1,6 @@
-# Supplementary material for the study "Democratized 3D Reconstruction Technologies"
+# Supplementary material for the study "A Benchmark of Popular Indoor 3D Reconstruction Technologies: Comparison of ARCore and RTAB-Map"
 
-\[DOI\]
+doi:10.3390/electronics01010005
 # Authors
 Ádám Wolf<sup>1,2,3</sup>, Péter Troll<sup>4</sup>, Stefan Romeder-Finger<sup>1</sup>, Andreas Archenti<sup>4</sup>,Károly Széll<sup>2,3</sup>and Péter Galambos<sup>2</sup>
 
@@ -16,8 +16,7 @@ Correspondence: adam.wolf@takeda.com
 
 ## Abstract
 
-The improvement in computational technology brings previously niche solutions to a wider user-base. As such, 3D reconstruction technologies are finding new use-cases in scientific and everyday areas where they were not present before. Cost-effective and easy-to-use solutions include camera-based 3D scanning techniques, such as photogrammetry. This paper provides an overview of the available solutions and discusses in detail the depth-image based Real-time Appearance-based Mapping (RTAB-Map) technique as well as a smartphone-based solution that utilises ARCore, the Augmented Reality (AR) framework of Google. To qualitatively compare the two 3D reconstruction technologies, a simple length measurement-based method was applied with a purpose-designed measurement object. The captured data was then analysed by a processing algorithm. In addition to the measurement results, case studies are also briefly discussed, which provide an example of applicability based on the capabilities of the technologies. As such, the paper presents the use-case of interior surveying in an automated laboratory as well as an example for using the discussed techniques for landmark surveying. The major findings are that point clouds created with these technologies provide a direction and shape accurate model, but they are loaded with mesh continuity error, and the estimated scale factor also has a large standard deviation.
-
+The fast evolution in computational and sensor technologies brings previously niche solutions to a wider userbase. As such, 3D reconstruction technologies are reaching new use-cases in scientific and everyday areas where they were not present before. Cost-effective and easy-to-use solutions include camera-based 3D scanning techniques, such as photogrammetry. This paper provides an overview of the available solutions and discusses in detail the depth-image based Real-time Appearance-based Mapping (RTAB-Map) technique as well as a smartphone-based solution that utilises ARCore, the Augmented Reality (AR) framework of Google. To qualitatively compare the two 3D reconstruction technologies, a simple length measurement-based method was applied with a purpose-designed reference object. The captured data were then analysed by a processing algorithm. In addition to the experimental results, specific case studies are briefly discussed, evaluating the applicability based on the capabilities of the technologies. As such, the paper presents the use-case of interior surveying in an automated laboratory as well as an example for using the discussed techniques for landmark surveying}. The major findings are that point clouds created with these technologies provide a direction- and shape-accurate model, but those contain mesh continuity errors, and the estimated scale factor has a large standard deviation.
 ## Contents
 | Directory | Description | 
 |---|---|
